@@ -37,4 +37,8 @@ public class FileResource implements Resource {
         File relativeFile = new File(file.getParentFile(), relativePath);
         return new FileResource(relativeFile);
     }
+    
+    public String toString() {
+        return file.toString();
+    }
 }
